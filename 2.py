@@ -6,3 +6,11 @@
 	1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 	By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 """
+
+fibonacci = [1, 2]
+total = 0
+while fibonacci[0] < 4000000:
+	if fibonacci[0] % 2 == 0: total += fibonacci[0]
+	fibonacci.append(sum(fibonacci))
+	fibonacci.pop(0)
+print(total)
