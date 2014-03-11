@@ -9,7 +9,7 @@
 
 fibonacci = [1, 2]
 total = 0
-while fibonacci[0] < 4000000:
+while fibonacci[0] <= 4000000:
 	if fibonacci[0] % 2 == 0: total += fibonacci[0]
 	fibonacci.append(sum(fibonacci))
 	fibonacci.pop(0)
